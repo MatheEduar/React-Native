@@ -11,7 +11,10 @@ Crie o projeto digitando:
     cd first_app
 ```
 
-### Explorando o projeto criado
+Para começar a testar o projeto utilize seu celular, baixe o aplicativo Expo na sua loja de aplicativos e dê o seguinte comando no terminal:
 
-Com a criação do projeto há vários arquivos criados, a configuração inicial é igual a essa:
+```bash
+    npm start
+```
 
+Um Qr será exposto no seu terminal e você poderá acessar o app que está criando.
