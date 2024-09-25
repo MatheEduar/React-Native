@@ -24,3 +24,11 @@ const toArray = (...args) => {
 console.log(toArray(1,2,3,4,6));
 
 console.log(hobbies);
+
+// Destructing
+
+const hobbies_destruction = ["Rage", "Fight"];
+
+const [hobbie1, hobbie2] = hobbies_destruction;
+
+console.log(hobbie1, hobbie2);
