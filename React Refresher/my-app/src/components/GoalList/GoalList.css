@@ -1,0 +1,15 @@
+.goal-list  {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+    text-align: center;
+    font-size: 1.6rem;
+    color: white;
+}
+
+.goal-list li:not(:last-child){
+    padding-bottom: 1rem;
+    border-bottom: 1px solid white;
+}
