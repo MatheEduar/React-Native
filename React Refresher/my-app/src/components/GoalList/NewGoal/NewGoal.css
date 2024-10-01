@@ -6,8 +6,8 @@
 }
 
 .new-goal input {
-    border: 2px solid rgb(159, 220, 255);
-    background-color: rgb(159, 220, 255);
+    border: none;
+    background-color: rgb(220, 242, 255);
     padding: 1rem;
     border-radius: 30px;
 }
