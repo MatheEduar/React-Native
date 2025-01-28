@@ -10,7 +10,7 @@ Este repositório documenta minha jornada de aprendizado com a ferrementa React 
 
 ## Conteúdo
 * **Projetos:**
-    * [**first-app**](https://github.com/MatheEduar/React-Native/tree/main/first-app) Um aplicativo TODO List, para aprender conceitos básicos sobre react native
+    * [**first-app**](https://github.com/MatheEduar/React-Native/tree/main/first-app): Um aplicativo TODO List, para aprender conceitos básicos sobre react native
 * **Cursos:**
     * [**React Native - The Practical Guide [2024]**](https://www.udemy.com/course/react-native-the-practical-guide/)
 * **Recursos:**
