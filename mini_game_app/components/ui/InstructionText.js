@@ -13,6 +13,7 @@ const styles = StyleSheet.create({
     instructionText: {
         color: Colors.primaryWhiteLight,
         fontSize: 18,
+        fontFamily: 'open-sans',
     },
     
 })

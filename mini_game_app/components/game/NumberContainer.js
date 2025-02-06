@@ -28,6 +28,7 @@ const styles = StyleSheet.create({
         fontSize: 38,
         fontWeight: 'bold',
         textAlign: 'center',
+        fontFamily: 'open-sans-bold',
     },
 
     }

@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
     },
     title: {
         fontSize: 32,
-        fontWeight: 'bold',
+        fontFamily: 'open-sans-bold',
         color: Colors.primaryWhite,
         textAlign: 'center',
         padding: 10,
