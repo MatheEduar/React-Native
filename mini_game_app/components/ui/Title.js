@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
         backgroundColor: Colors.primaryBlackLight,
         borderColor: Colors.primaryWhite,
         borderWidth: 2,
-        borderRadius: 8,
+        paddingHorizontal: 2,
         
     },
     title: {
