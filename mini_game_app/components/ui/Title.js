@@ -20,11 +20,13 @@ const styles = StyleSheet.create({
         
     },
     title: {
-        fontSize: 32,
+        fontSize: 30,
         fontFamily: 'open-sans-bold',
         color: Colors.primaryWhite,
         textAlign: 'center',
         padding: 10,
+        maxWidth: '80%',
+        width: 300,
         
     }
 })
