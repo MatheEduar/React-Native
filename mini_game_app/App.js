@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { StyleSheet, ImageBackground, SafeAreaView } from 'react-native';
+import { StyleSheet, ImageBackground, SafeAreaView} from 'react-native';
+import { StatusBar } from 'expo-status-bar';
 import { LinearGradient } from 'expo-linear-gradient';
 import { useFonts } from 'expo-font'
 import AppLoading from 'expo-app-loading';
@@ -67,6 +68,7 @@ export default function App() {
         </SafeAreaView>
       </ImageBackground>
     </LinearGradient>
+
   )
 }
 
