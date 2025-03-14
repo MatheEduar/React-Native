@@ -3,7 +3,7 @@
     "name": "meals_app",
     "slug": "meals_app",
     "version": "1.0.0",
-    "backgroundColor": "#24184f",
+    "backgroundColor": "#001144",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
