@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, Text } from 'react-native';
 import { StatusBar } from "expo-status-bar";
 
 import CategoriesScreen from './screens/CategoriesScreen';
@@ -43,7 +43,8 @@ export default function App() {
           />
           <Stack.Screen 
             name="MealDetail"
-            component={MealDetailScreen} 
+            component={MealDetailScreen}
+            
           />
         </Stack.Navigator>
       </NavigationContainer>
