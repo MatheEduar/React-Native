@@ -1,5 +1,5 @@
 import { View, Text, Image, StyleSheet, ScrollView} from "react-native";
-import { useLayoutEffect } from "react";
+import { useContext, useLayoutEffect } from "react";
 
 import MealDetail from "../components/MealDetails";
 import Subtitle from "../components/MealDetail/Subtitle";
@@ -7,29 +7,39 @@ import List from "../components/MealDetail/List";
 import IconButton from "../components/IconButton";
 
 import { MEALS } from "../data/dummy-data"
+import { FavoritesContext } from "../store/context/favorites-context";
 
 function MealDetailScreen({route, navigation}){
+    const favoriteMealsCtx = useContext(FavoritesContext);
 
-    function headerPressButtonHandler(){
-        console.log("Pressed!");
+    const mealId = route.params.mealId
+    const selectedMeal = MEALS.find((meal) => meal.id === mealId);
+
+    const mealIsFavorite = favoriteMealsCtx.ids.includes(mealId);
+
+
+    function changeFavoriteStatusHandler(){
+        if (mealIsFavorite) {
+            favoriteMealsCtx.removeFavorite(mealId);
+        } else {
+            favoriteMealsCtx.addFavorite(mealId);
+        }
     }
 
     useLayoutEffect(() =>{
         navigation.setOptions({
             headerRight: () => {
                 return <IconButton 
-                        onPress={headerPressButtonHandler}
+                        icon={mealIsFavorite ? 'star' : 'star-outline'}
+                        onPress={changeFavoriteStatusHandler}
                         color='white'
-                        icon="star"
                         />
             }
         })
-    }, [navigation, headerPressButtonHandler]);
+    }, [navigation, changeFavoriteStatusHandler]);
 
 
-    const mealId = route.params.mealId
-
-    const selectedMeal = MEALS.find((meal) => meal.id === mealId);
+    
 
     return (
         <ScrollView style={styles.mealDetail}>
@@ -63,7 +73,6 @@ export default MealDetailScreen;
 const styles = StyleSheet.create({
     mealDetail: {
         marginBottom: 16,
-        
     },
     image: {
         width: '100%',
