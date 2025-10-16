@@ -1,9 +1,8 @@
 {
   "expo": {
-    "name": "meals_app",
-    "slug": "meals_app",
+    "name": "teste_inputs",
+    "slug": "teste_inputs",
     "version": "1.0.0",
-    "backgroundColor": "#001144",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -21,15 +20,10 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.matheeduar.meals_app"
+      "edgeToEdgeEnabled": true
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    },
-    "extra": {
-      "eas": {
-        "projectId": "3f2aeab1-c3bc-4651-b230-f095a14ed5af"
-      }
     }
   }
 }
